@@ -2,15 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Text_details</title>
+    <title>Title</title>
 </head>
 <body>
-<h1>
-    <div>
-        <p> {{ content.title }} </p>
-
-        {{ content.content}}
-    </div>
-</h1>
+{% for i in content %}
+<p><a href="text/{{ i.id }}">{{ i.title }}</a></p>
+{% endfor %}
 </body>
 </html>
